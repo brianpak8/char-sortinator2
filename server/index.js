@@ -1,0 +1,19 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 5186;
+const {sortinate} = require('./logic.js');
+// const routes = require('./routes.js');
+
+app.use(express.static(`${__dirname}/../client/`));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.post('/sort', (req, res) => {
+  res.end(sortinate.sortinate(req.body));
+})
+
+app.listen(port, () => {console.log('listening on port ' + port)});
+
+
+module.exports.app = app;
