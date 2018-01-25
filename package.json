@@ -1,0 +1,23 @@
+{
+  "name": "char-sortinator2",
+  "version": "1.0.0",
+  "description": "sort strings alphabetically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianpak8/char-sortinator2.git"
+  },
+  "author": "brian pak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianpak8/char-sortinator2/issues"
+  },
+  "homepage": "https://github.com/brianpak8/char-sortinator2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
