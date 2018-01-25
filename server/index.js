@@ -10,7 +10,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/sort', (req, res) => {
-  res.end(sortinate.sortinate(req.body));
+  console.log(req);
+  console.log('req.body.string', req.body.string);
+  res.end(sortinate(req.body.string));
 })
 
 app.listen(port, () => {console.log('listening on port ' + port)});
